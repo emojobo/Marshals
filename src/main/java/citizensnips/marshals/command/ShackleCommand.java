@@ -3,6 +3,8 @@ package citizensnips.marshals.command;
 import citizensnips.marshals.MarshalsPlugin;
 import citizensnips.marshals.util.Perms;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
 import java.util.List;
 
 public class ShackleCommand extends MarshalCommand {
@@ -18,6 +20,9 @@ public class ShackleCommand extends MarshalCommand {
 
     @Override
     public void runCommand(CommandSender sender, List<String> strings) {
-
+          this.addKey("shackle");
+          if (!(sender instanceof Player)){
+            return;
+          }
         }
  }
