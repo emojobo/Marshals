@@ -1,0 +1,15 @@
+name: Marshals
+main: citizensnips.marshals.MarshalsPlugin
+version: maven-version-number
+author: citizensnips
+
+commands:
+  marshal:
+    description: Base Marshal plugin command.
+    usage: /<command>
+  gag:
+    description: Gag command.
+    usage: /<command>
+  shackle:
+    description: Shackle command.
+    usage: /<command>
